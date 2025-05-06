@@ -16,6 +16,7 @@ def mcut_sparse_decode(
     rlsa_d: int = 5, 
     rlsa_k: int = 1000, 
     rlsa_t: int = 1000, 
+    rlsa_alpha: float = 0.3, 
     rlsa_device: str = "cuda",
     rlsa_seed: int = 1234
 ) -> Union[List[np.ndarray], np.floating]:
@@ -47,10 +48,12 @@ def mcut_sparse_decode(
                         init_sol=vars[node_begin_idx:node_end_idx],
                         graph=to_numpy(graph),
                         edge_index=edge_index[edge_begin_idx:edge_end_idx],
+                        rlsa_kth_dim="both",
                         rlsa_tau=rlsa_tau,
                         rlsa_d=rlsa_d,
                         rlsa_k=rlsa_k,
                         rlsa_t=rlsa_t,
+                        rlsa_alpha=rlsa_alpha,
                         rlsa_device=rlsa_device,
                         seed=rlsa_seed
                     )
