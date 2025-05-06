@@ -15,9 +15,9 @@ FINETUNE = False # FT
 # local search settings
 USE_RLSA = False
 RLSA_SETTINGS_DICT = {
-    "BA-SMALL": (1, 20, 1000, 1000, 0.3),
-    "BA-LARGE": (1, 50, 1000, 1000, 0.3),
-    "BA-GIANT": (1, 100, 1000, 1000, 0.3)
+    "BA-SMALL": (1, 20, 1000, 1000),
+    "BA-LARGE": (1, 50, 1000, 1000),
+    "BA-GIANT": (1, 100, 1000, 1000)
 }
 
 # test files and pretrained files
@@ -61,8 +61,7 @@ if __name__ == "__main__":
                 "rlsa_tau": rlsa_settings[0],
                 "rlsa_d": rlsa_settings[1],
                 "rlsa_k": rlsa_settings[2],
-                "rlsa_t": rlsa_settings[3],
-                "rlsa_alpha": rlsa_settings[4]
+                "rlsa_t": rlsa_settings[3]
             }
         ),
         inference_steps=INFERENCE_STEP,
