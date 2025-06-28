@@ -78,11 +78,11 @@ First, please download the test-datasets and pre-trained files you need to your 
 If you find COExpander valuable for your research or applied projects:
 ```bibtex
 @inproceedings{
-ma2025coexpander,
-title={{COE}xpander: Adaptive Solution Expansion for Combinatorial Optimization},
-author={Jiale Ma and Wenzheng Pan and Yang Li and Junchi Yan},
-booktitle={Forty-second International Conference on Machine Learning},
-year={2025},
-url={https://openreview.net/forum?id=KMaBXMWsBM}
+  ma2025coexpander,
+  title={{COE}xpander: Adaptive Solution Expansion for Combinatorial Optimization},
+  author={Jiale Ma and Wenzheng Pan and Yang Li and Junchi Yan},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=KMaBXMWsBM}
 }
 ```
